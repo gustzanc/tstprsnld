@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0%;
+            max-width: 900px;
+            margin: auto auto;
+            background-color: #C5E3FF;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        fieldset {
+            margin: auto 25px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin: 50px;
+        }
+
+        .titulo {
+            margin: auto auto;
+            max-width: 25em;
+            min-width: fit-content;
+            height: 6.5rem;
+            background-color: #79BFFF;
+            border-radius: 0px 0px 39px 39px;
+
+            text-align: center;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            padding: 0px 15px 0px 15px;
+        }
+
+        .inserirNome {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: end;
+        }
+
+        .questoes {
+            text-align: initial;
+        }
+
+        .resposta {
+            margin: 0px;
+        }
+
+        #nomeCompleto {
+            margin: auto 25px;
+            grid-column: span 2;
+            white-space: nowrap;
+            min-width: 15%;
+            max-width: 75%;
+        }
+
+        #btn_submeter {
+            margin: 1em auto;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #093A67;
+            border: 2px solid #00172D;
+            color: white;
+            cursor: pointer;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            font-size: 0.7em;
+            font-weight: bolder;
+            line-height: 0.1;
+            padding: 1.2em 2.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+    <title>Questionário</title>
+</head>
+
+<body oncontextmenu='return false'>
+    <header>
+        <h1>Questionário</h1>
+        <h2>Estilos Comportamentais</h2>
+        <p>Responda o questionário abaixo com o quanto você concorda com cada questão. <br> Lembre-se que este teste é
+            <strong>INDIVIDUAL</strong>, não deve ser compartilhado com outras pessoas que não estejam autorizadas a
+            responder e é um meio de avaliação.
+        </p>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Questionário</legend>
+            <div class="inserirNome">
+                Digite seu nome completo:
+                <input type="text" maxlength="550" id="nomeCompleto">
+            </div>
+            <div class="questoes">
+                <hr>
+                <div class="questao_1">
+                    <h3>Eficiência é minha característica</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_1" value="0"> Nada ||
+                        <input type="radio" name="respQuest_1" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_1" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_1" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_2">
+                    <h3>Brincadeiras têm o seu lugar</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_2" value="0"> Nada ||
+                        <input type="radio" name="respQuest_2" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_2" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_2" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_3">
+                    <h3>Gosto de objetividade e me irrito com detalhes desnecessários</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_3" value="0"> Nada ||
+                        <input type="radio" name="respQuest_3" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_3" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_3" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_4">
+                    <h3>Não tenho tempo a perder</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_4" value="0"> Nada ||
+                        <input type="radio" name="respQuest_4" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_4" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_4" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_5">
+                    <h3>Vou direto ao ponto, evito rodeios</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_5" value="0"> Nada ||
+                        <input type="radio" name="respQuest_5" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_5" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_5" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_6">
+                    <h3>Sou um comunicador simpático e agradável</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_6" value="0"> Nada ||
+                        <input type="radio" name="respQuest_6" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_6" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_6" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_7">
+                    <h3>Sou disponível aos que solicitam a minha ajuda</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_7" value="0"> Nada ||
+                        <input type="radio" name="respQuest_7" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_7" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_7" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_8">
+                    <h3>Evito discussões</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_8" value="0"> Nada ||
+                        <input type="radio" name="respQuest_8" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_8" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_8" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_9">
+                    <h3>Não gosto de pessoas duras e exigentes</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_9" value="0"> Nada ||
+                        <input type="radio" name="respQuest_9" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_9" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_9" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_10">
+                    <h3>Valorizo detalhes e opinião dos outros</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_10" value="0"> Nada ||
+                        <input type="radio" name="respQuest_10" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_10" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_10" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_11">
+                    <h3>Baseio-me nos fatos e dados comprovados</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_11" value="0"> Nada ||
+                        <input type="radio" name="respQuest_11" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_11" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_11" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_12">
+                    <h3>Valorizo toda a informação: palavras, olhar, corpo e voz</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_12" value="0"> Nada ||
+                        <input type="radio" name="respQuest_12" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_12" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_12" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_13">
+                    <h3>Falo de maneira lógica e organizada</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_13" value="0"> Nada ||
+                        <input type="radio" name="respQuest_13" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_13" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_13" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_14">
+                    <h3>Gosto de saber de detalhes para tomar decisões</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_14" value="0"> Nada ||
+                        <input type="radio" name="respQuest_14" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_14" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_14" value="3"> Muito
+                    </div>
+                </div>
+                <div class="questao_15">
+                    <h3>Falo de forma clara, com boa dicção</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_15" value="0"> Nada ||
+                        <input type="radio" name="respQuest_15" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_15" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_15" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_16">
+                    <h3>Gosto de falar, sou aberto, mas percebo os limites</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_16" value="0"> Nada ||
+                        <input type="radio" name="respQuest_16" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_16" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_16" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_17">
+                    <h3>Cativo os outros com o meu modo de falar</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_17" value="0"> Nada ||
+                        <input type="radio" name="respQuest_17" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_17" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_17" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_18">
+                    <h3>Sou prático e eficiente, lidero se preciso</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_18" value="0"> Nada ||
+                        <input type="radio" name="respQuest_18" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_18" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_18" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_19">
+                    <h3>Gosto de ter minhas opiniões valorizadas e reconhecidas</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_19" value="0"> Nada ||
+                        <input type="radio" name="respQuest_19" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_19" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_19" value="3"> Muito
+                    </div>
+                </div>
+                <hr>
+                <div class="questao_20">
+                    <h3>Organizo meu discurso com emoção e apelo</h3>
+                    <div class="resposta">
+                        <input type="radio" name="respQuest_20" value="0"> Nada ||
+                        <input type="radio" name="respQuest_20" value="1" checked> Pouco ||
+                        <input type="radio" name="respQuest_20" value="2"> Meio-termo ||
+                        <input type="radio" name="respQuest_20" value="3"> Muito
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <input type="button" value="Submeter" onclick="submeterDados()" id="btn_submeter">
+    </main>
+    <script>
+        function popularValores(valoresRecebidos) {
+            valoresRecebidos[0] = parseInt(document.querySelector(`input[name='respQuest_1']:checked`).value);
+            valoresRecebidos[1] = parseInt(document.querySelector(`input[name='respQuest_2']:checked`).value);
+            valoresRecebidos[2] = parseInt(document.querySelector(`input[name='respQuest_3']:checked`).value);
+            valoresRecebidos[3] = parseInt(document.querySelector(`input[name='respQuest_4']:checked`).value);
+            valoresRecebidos[4] = parseInt(document.querySelector(`input[name='respQuest_5']:checked`).value);
+            valoresRecebidos[5] = parseInt(document.querySelector(`input[name='respQuest_6']:checked`).value);
+            valoresRecebidos[6] = parseInt(document.querySelector(`input[name='respQuest_7']:checked`).value);
+            valoresRecebidos[7] = parseInt(document.querySelector(`input[name='respQuest_8']:checked`).value);
+            valoresRecebidos[8] = parseInt(document.querySelector(`input[name='respQuest_9']:checked`).value);
+            valoresRecebidos[9] = parseInt(document.querySelector(`input[name='respQuest_10']:checked`).value);
+            valoresRecebidos[10] = parseInt(document.querySelector(`input[name='respQuest_11']:checked`).value);
+            valoresRecebidos[11] = parseInt(document.querySelector(`input[name='respQuest_12']:checked`).value);
+            valoresRecebidos[12] = parseInt(document.querySelector(`input[name='respQuest_13']:checked`).value);
+            valoresRecebidos[13] = parseInt(document.querySelector(`input[name='respQuest_14']:checked`).value);
+            valoresRecebidos[14] = parseInt(document.querySelector(`input[name='respQuest_15']:checked`).value);
+            valoresRecebidos[15] = parseInt(document.querySelector(`input[name='respQuest_16']:checked`).value);
+            valoresRecebidos[16] = parseInt(document.querySelector(`input[name='respQuest_17']:checked`).value);
+            valoresRecebidos[17] = parseInt(document.querySelector(`input[name='respQuest_18']:checked`).value);
+            valoresRecebidos[18] = parseInt(document.querySelector(`input[name='respQuest_19']:checked`).value);
+            valoresRecebidos[19] = parseInt(document.querySelector(`input[name='respQuest_20']:checked`).value);
+            //console.log("PopularVetores_ :" + valoresRecebidos)
+            return valoresRecebidos;
+        }
+        function calculaValores(valoresRecebidos) {
+            for (let i = 0; i < valoresRecebidos.length; i++) {
+                valoresRecebidos[i] = valoresRecebidos[i] * 2;
+            }
+            //console.log("Calcula Valores_ :" + valoresRecebidos);
+            return valoresRecebidos;
+        }
+        function somaValores(valoresSomados, valoresRecebidos) {
+            for (let i = 0; i <= 4; i++) {
+                valoresSomados[0] += valoresRecebidos[i];
+            }
+            for (let i = 5; i <= 9; i++) {
+                valoresSomados[1] += valoresRecebidos[i];
+            }
+            for (let i = 10; i <= 14; i++) {
+                valoresSomados[2] += valoresRecebidos[i];
+            }
+            for (let i = 15; i <= 19; i++) {
+                valoresSomados[3] += valoresRecebidos[i];
+            }
+            //console.log(valoresSomados[0] + " | " + valoresSomados[1] + " | " + valoresSomados[2] + " | " + valoresSomados[3]);
+            return valoresSomados;
+        }
+        function post_API(nomeRecebido, valoresRecebidos, valoresSomados) {
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            var raw = JSON.stringify({
+                "nomeInserido": nomeRecebido,
+                "Q0": valoresRecebidos[0],
+                "Q1": valoresRecebidos[1],
+                "Q2": valoresRecebidos[2],
+                "Q3": valoresRecebidos[3],
+                "Q4": valoresRecebidos[4],
+                "Q5": valoresRecebidos[5],
+                "Q6": valoresRecebidos[6],
+                "Q7": valoresRecebidos[7],
+                "Q8": valoresRecebidos[8],
+                "Q9": valoresRecebidos[9],
+                "Q10": valoresRecebidos[10],
+                "Q11": valoresRecebidos[11],
+                "Q12": valoresRecebidos[12],
+                "Q13": valoresRecebidos[13],
+                "Q14": valoresRecebidos[14],
+                "Q15": valoresRecebidos[15],
+                "Q16": valoresRecebidos[16],
+                "Q17": valoresRecebidos[17],
+                "Q18": valoresRecebidos[18],
+                "Q19": valoresRecebidos[19],
+                "V_G_ANALITICO": valoresSomados[0],
+                "V_G_AMIGAVEL": valoresSomados[1],
+                "V_G_AUTORITARIO": valoresSomados[2],
+                "V_G_EXPRESSIVO": valoresSomados[3]
+            });
+
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+
+            fetch("https://62858d58f0e8f0bb7c05af93.mockapi.io/PW/E_C_v1/receivedData", requestOptions)
+                .then(response => response.json())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+        }
+        function submeterDados() {
+            let valoresRecebidos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                valoresSomados = [0, 0, 0, 0];
+            let nomeRecebido = document.getElementById("nomeCompleto").value;
+            if (nomeRecebido.length == 0) {
+                window.alert("Confira o nome digitado!");
+                return;
+            }
+            popularValores(valoresRecebidos);
+            calculaValores(valoresRecebidos);
+            somaValores(valoresSomados, valoresRecebidos);
+            post_API(nomeRecebido, valoresRecebidos, valoresSomados);
+            window.alert("Dados recebidos!");
+            return 0;
+        }
+    </script>
+</body>
+
+</html>
